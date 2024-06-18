@@ -1,0 +1,282 @@
+.nav1{
+    margin-left: 10px;
+    color: white;
+    font-size:larger;
+    margin-top: 10px;
+}
+.sidebar{
+   height: 100%;
+    top: 0;
+    width: 270px;
+    background: #f0f0f0;
+    text-align: center;
+    position: fixed;
+    overflow-x: hidden;
+    padding-top: 60px;
+    background-color: #52796F;
+    top: 0;
+    left: -270px; /* Sembunyikan sidebar dengan menggesernya ke kiri */
+    transition: left 0.3s ease-in-out; /* Efek transisi untuk animasi */
+}
+
+
+#sidebarToggleBtn {
+    position: relative;
+    top: 0;
+    left: 0px;
+}
+
+#sidebarToggleBtn.active{
+    left: 280px; /* Jarak awal tombol toggle dari sisi kanan */
+    z-index: 1; /* Pastikan tombol toggle berada di atas sidebar */
+    transition: left 0.3s ease-in-out; /* Animasi pergerakan tombol toggle */
+}
+
+.sidebar.active {
+    left: 0px; /* Tampilkan sidebar dengan menggesernya ke posisi semula */
+}
+
+.container-fluid {
+    transition: width 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.container-fluid.active {
+  
+    width: 82.5%;
+    margin-left: 270px;
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    line-height: 60px;
+    list-style: none;
+    color: white;
+    font-size: 16px;
+    padding: 0 20px; /* Atur padding kiri dan kanan agar menu terlihat lebih berjarak */
+    box-sizing: border-box;
+}
+
+
+.sb-topnav{
+    display: flex;
+    justify-content: space-between; /* Membuat elemen-elemen di dalam navbar tersebar secara merata */
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-right {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    color: white;
+    display: flex;
+    padding-right: 20px;
+}
+
+
+.sidebar ul li:hover {
+
+    background-color: #385b52;
+}
+
+.sb-nav-fixed{
+    background-color: #f0f0f0;
+}
+
+#layoutSidenav_content{
+    position: relative;
+    margin-left: 0;
+}
+
+.noti-box {
+    min-height: 100px;
+    padding: 20px;
+    }
+    
+        .noti-box .icon-box {
+    display: block;
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 70px;
+    height: 70px;
+    line-height: 75px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 40px;
+    }
+    .text-box p{
+        margin: 0 0 3px;
+    }
+    .main-text {
+        font-size: 25px;
+        font-weight:600;
+    }
+    .set-icon {
+        -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    
+    }
+        .bg-color-green {
+    background-color: #00CE6F;
+    color: #fff;
+    }
+     .bg-color-blue {
+    background-color: #A95DF0;
+    color: #fff;
+    }
+      .bg-color-red {
+    background-color: #DB0630;
+    color: #fff;
+    }
+      .bg-color-brown {
+    background-color: #B94A00;
+    color: #fff;
+    }
+    
+    
+     .icon-box-right {
+    display: block;
+    float: right;
+    margin: 0 15px 10px 0;
+    width: 70px;
+    height: 70px;
+    line-height: 75px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 40px;
+    }
+    
+     .main-temp-back {
+    background: #8702A8;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    }
+     .main-temp-back .text-temp {
+    font-size: 40px;
+    }
+    .back-dash {
+        padding:20px;
+        font-size:20px;
+        font-weight:500;
+          -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color:#2EA7EB;
+    color:#fff;
+    }
+        .back-dash p {
+            padding-top:16px;
+            font-size:13px;
+            color:#fff;
+            line-height:25px;
+            text-align:justify;
+        }
+        .back-footer-green {
+        background-color: #009B50;
+        border-top: 0px solid #fff;
+    }
+         .back-footer-red {
+        background-color: #AF0000;
+        border-top: 0px solid #fff;
+    }
+         .color-bottom-txt {
+       color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    }
+         /*CHAT PANEL*/
+         .card-body {
+            padding: 20px; /* Add padding to card body */
+          }
+          
+          .panel-custom {
+            background-color: #fff; /* Warna latar belakang */
+            border-radius: 10px; /* Sudut bulatan */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+            padding: 20px;
+        }
+        
+        .panel-heading {
+            background-color: #1183fdcf; /* Warna latar belakang header */
+            color: #fff; /* Warna teks header */
+            padding: 10px 20px;
+            border-top-left-radius: 10px; /* Sudut bulatan kiri atas */
+            border-top-right-radius: 10px; /* Sudut bulatan kanan atas */
+        }
+        
+        .panel-body {
+            padding: 20px;
+        }
+        
+        .panel-footer {
+            background-color: #c5d4e3; /* Warna latar belakang footer */
+            padding: 10px 20px;
+            border-bottom-left-radius: 10px; /* Sudut bulatan kiri bawah */
+            border-bottom-right-radius: 10px; /* Sudut bulatan kanan bawah */
+        }
+        
+        .panel-text {
+            text-align: center;
+            color: #000;
+            z-index: 1;
+        }
+          
+          .noti-box {
+            min-height: 100px;
+            padding: 20px;
+          }
+          
+          .icon-box {
+            display: block;
+            float: left;
+            margin-right: 15px;
+            width: 70px;
+            height: 70px;
+            line-height: 75px;
+            text-align: center;
+            font-size: 40px;
+            border-radius: 50%;
+          }
+          
+          .text-box {
+            overflow: hidden;
+          }
+          
+          .text-box p {
+            margin: 0;
+          }
+          
+          .bg-color-red {
+            background-color: #DB0630;
+            color: white;
+          }
+
+.notifikasi-terlambat {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+
+
+         
